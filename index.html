@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Liveness and Emotion Detection</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="main-section">
+    <h1>Face Liveness and Emotion Detection</h1>
+  
+    <video id="videoElement" autoplay muted></video>
+    <canvas id="canvas"></canvas>
+    
+    <button id="startStopButton">Start Camera</button>
+    
+    <p id="status">Liveness: Not Detected | Emotion: None</p>
+    <p id="user-face">Face Detected</p>
+    <p id="distraction-status">Distraction: Not Detected</p>
+
+    <button class="goTo">
+      <a href="/faceapi.html">
+        Test Using Face Api js
+    </a>
+  </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.js"></script>
+  <script type="module" src="/scripts/script.js"></script>
+</body>
+</html>

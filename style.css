@@ -1,0 +1,54 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#videoElement {
+  width: 640px;
+  height: 480px;
+  border: 1px solid black;
+  display: none;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px; /* We have to march the video width ...*/
+  height: 480px; /* We have to match thevideo height ...*/
+  z-index: 1;
+}
+
+#startStopButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
+
+.goTo{
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
+
+.goTo a{
+  text-decoration: none;
+  counter-reset: #111;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#user-face {
+  font-size: 18px;
+}
